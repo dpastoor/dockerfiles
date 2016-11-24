@@ -24,7 +24,7 @@ RUN apt-get update \
 	      /usr/share/locale/
 
 # Add NONMEM Files and install then add nonmem to path
-COPY nm74CD06AUG2016 /tmp/nm740CD
+COPY nm74CD15NOV2016 /tmp/nm740CD
 RUN mkdir -p /opt/NONMEM/nm74
 COPY nonmem.lic /opt/NONMEM/nm74/license/nonmem.lic
 RUN bash /tmp/nm740CD/SETUP74 /tmp/nm740CD /opt/NONMEM/nm74 gfortran y /usr/bin/ar same rec i unzip nonmem74e.zip nonmem74r.zip \ 
